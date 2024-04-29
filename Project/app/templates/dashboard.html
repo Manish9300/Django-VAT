@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance System Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .container {
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Online Attendance System</h1>
+        <button type="button" class="btn btn-danger float-right mb-3"><a href="logout">Log Out</a></button>
+      </div>
+      <form action="choose_class">
+        <div class="form-group">
+          <label for="className">Select Class</label>
+          <select class="form-control" id="className">
+            <option value="classA">Class A</option>
+            <option value="classB">Class B</option>
+            <option value="classC">Class C</option>
+            <option value="classD">Class D</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

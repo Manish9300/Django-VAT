@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .attendance-label {
+            font-weight: bold;
+            margin-bottom: 10px; 
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <form action="../edcode/{{x.id}}">
+            <div class="form-group">
+                <label for="attendance" class="attendance-label"><h2>Choose attendance status:</h2></label>
+                <select class="form-control" name="a4" id="attendance">
+                    <option value="Present">Present</option>
+                    <option value="Absent">Absent</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

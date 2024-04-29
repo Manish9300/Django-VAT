@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class A Attendance</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>Class A - Online Attendance System</h1>
+                <button class="btn btn-outline-secondary float-left mb-3"><a href="dashboard">Go Back</a></button>
+                <button class="btn btn-outline-secondary float-right mb-3"><a href="show">Show All</a></button>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">
+                <h2><u>Attendance List</u></h2>
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="studentId"><b><u>Student ID</u></b></label>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="studentName"><b><u>Student Name</u></b></label>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="attendance"><b><u>Attendance</u></b></label>
+                    </div>
+                </div>
+                    {% for i in x %}
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+
+                            {{i.student_id}}
+                        </div>
+                        <div class="form-group col-md-4">
+
+                            {{i.student_name}}
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <button type="submit" class="btn btn-outline-secondary btn-block"><a href="edit/{{i.id}}">Attendance</a></button>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
